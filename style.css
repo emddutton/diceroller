@@ -1,0 +1,75 @@
+body {
+    width: 50%;
+    margin: 0 auto;
+}
+.dicewrap {
+    text-align: center;
+}
+
+#dice{
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 200px 25px 75px 25px;
+}
+
+.dice1 {
+
+}
+
+.dots {
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.centerdot {
+    display: none;
+    top: 75px;
+    right: 75px;
+}
+
+.rightcorner {
+    display: none;
+    top: 15px;
+    right: 15px;
+}
+.leftcorner {
+    display: none;
+    top: 15px;
+    left: 15px;
+}
+
+.rightbottom {
+    display: none;
+    bottom: 15px;
+    right: 15px;
+}
+
+.leftbottom {
+    display: none;
+    bottom: 15px;
+    left: 15px;
+}
+
+.sideright {
+    display: none;
+    top: 75px;
+    right: 15px;
+}
+.sideleft {
+    display: none;
+    top: 75px;
+    left: 15px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    background-color: yellow;
+    margin: 0 auto;
+    font-size: 26px;
+}
