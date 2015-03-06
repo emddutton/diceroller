@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-#dice{
+.dice{
     position: relative;
     display: inline-block;
     height: 200px;
@@ -15,9 +15,6 @@ body {
     margin: 200px 25px 75px 25px;
 }
 
-.dice1 {
-
-}
 
 .dots {
     position: absolute;
@@ -73,3 +70,53 @@ button {
     margin: 0 auto;
     font-size: 26px;
 }
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        -ms-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        -ms-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+

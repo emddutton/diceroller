@@ -4,8 +4,10 @@
 $(document).ready(function(){
 
     function reset() {
+        $(".dice").removeClass('animated shake');
         $(".dots").hide();
-    }
+        console.log('bye');
+        }
 
     function roll(side) {
         var one = (side + ".centerdot");
@@ -15,7 +17,6 @@ $(document).ready(function(){
         var five = (side + '.leftbottom');
         var six = (side + '.sideright');
         var seven = (side + '.sideleft');
-
 
 
         var diceroll = Math.floor(Math.random() * 7);
@@ -62,9 +63,14 @@ $(document).ready(function(){
     }
 
 
-    $('button').click(function(){
+    $('button').on('click', function() {
         reset();
-        roll(".right");
-        roll(".left");
-    })
-});
+        $(".dice").addClass('animated shake');
+        setTimeout(function() {
+            roll(".left");
+            roll(".right");
+        }, 1000);
+        });
+
+    });
+
