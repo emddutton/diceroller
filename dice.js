@@ -19,7 +19,7 @@ $(document).ready(function(){
         var seven = (side + '.sideleft');
 
 
-        var diceroll = Math.floor(Math.random() * 7);
+        var diceroll = Math.floor(Math.random() * 6 + 1);
         if (diceroll == 1) {
            $(one).show();
             console.log('one');
